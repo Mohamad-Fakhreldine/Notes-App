@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="Stylesheet" href="Stylesheets/nav&footer.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="Assets/Logo.png" alt="LOGO" class="logo"></img>
+                <P>NEXLIST</P>
+            </div>
+            <div class="nav-words">
+                <a href="#" id="nav-home">Home</a>
+                <a href="#" id="nav-tasks">Tasks</a>
+                <a href="#" id="nav-settings">Settings</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="home" id="home">
+            <div class="home-header">
+                <p>Welcome to NexList</p>
+            </div>
+            <div class="home-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad illo beatae nulla velit, error similique, provident assumenda quibusdam delectus quod quo facilis. Tenetur, doloribus ea perspiciatis itaque commodi aliquid!</p> <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ullam, voluptates reiciendis provident nulla culpa quidem voluptatibus, molestias ducimus, veniam laudantium quibusdam quasi deserunt non quis nobis blanditiis a dolorum.</p> <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure dicta enim totam nostrum blanditiis possimus veritatis quis nulla magni ducimus velit, aut minus accusamus, cumque voluptates! Dolore laboriosam doloremque voluptate?</p> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sint repudiandae aperiam tempora hic possimus quasi, corrupti non dignissimos, soluta minus nemo eveniet ad corporis neque sunt earum. Nihil, quae.</p>
+            </div>
+            <div class="home-footer">
+                <button class="cta" id="get-started-btn">
+                  <span>Get Started</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+            </div>
+        </section>
+        <section class="tasks" id="tasks">
+            <div class="tasks-header">
+                <p>NexList Tasks</p>
+            </div>
+            <div class="tasks-body">
+                <div class="input-task">
+                    <form id="task-form" class="task-form">
+                        <label for="task-input">New Task</label>
+                        <input type="text" id="task-input" class="task-input" placeholder="Input text..." required>
+                        <button type="submit" class="submit-button">Add</button>
+                    </form>
+                </div>
+                <hr class="line">
+                <div class="task-list" id="tasks-container">
+                    <!-- Tasks -->
+                </div>
+            </div>
+            <div class="tasks-footer">
+            </div>
+        </section>
+        <section id="settings" class="settings">
+            <div class="settings-header">
+                <p>Profile</p>
+            </div>
+            <div class="settings-body">
+                <form id="settings-form" class="settings-form">
+                    <label for="name">Name</label><hr>
+                    <input type="text" id="name" class="settings-input" required>
+                    <br>
+                    <label for="email">Email</label><hr>
+                    <input type="text" id="email" class="settings-input" required>
+                    <br>
+                    <label for="completed-tasks">Tasks done</label> <hr>
+                    <input type="text" id="completed-tasks" class="settings-input" readonly>
+                </form>
+            </div>
+            <!-- Edit Get Started -->
+            <div class="settings-footer">
+                <button class="ctb" id="update-btn">
+                  <span>Update</span>
+                  <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us: <a href="mailto:mohamad.jawad.fakhreldine.dev@gmail.com">mohamad.jawad.fakhreldine.dev@gmail.com</a></p>
+        <p>All rights reserved</p>
+        <p>2025-2026</p>
+    </footer>
+    <script src="Scripts/tasks.js"></script>
+</body>
+</html> 
